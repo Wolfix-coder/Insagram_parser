@@ -1,0 +1,27 @@
+{
+    "window": {
+        "width": 600,
+        "height": 400,
+        "title": "Instagram Parser v1.0"
+    },
+    "theme": {
+        "bg_color": "#ffffff"
+    },
+    "font": {
+        "font_1": {
+            "path": "/assets/font/Inter.tff",
+            "size": 15
+        },
+        "font_2": {
+            "path": "/assets/font/NotoSans.tff",
+            "size": 15
+        },
+        "font_3": {
+            "path": "/assets/font/Roboto.tff",
+            "size": 15
+        }
+    },
+    "option": {
+        "download": 20
+    }
+}
