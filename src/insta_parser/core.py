@@ -126,14 +126,13 @@ class InstaApp:
                 username
             )
 
-            # target_path = Path(target_dir) / username
-            target_path = username
-            # target_path.mkdir(parents=True, exist_ok=True)
+            target_path = Path(target_dir) / username
+            target_path.mkdir(parents=True, exist_ok=True)
 
             for post in islice(profile.get_posts(), limit):
                 self.L.download_post(
                     post,
-                    target=str(target_path)
+                    target=target_path
                 )
 
             logger.info(

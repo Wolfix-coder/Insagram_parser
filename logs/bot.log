@@ -137,3 +137,148 @@ instaloader.exceptions.ConnectionException: JSON Query to web/search/topsearch/:
 2026-01-20 20:27:27,693 - MAIN - INFO - Ініціалізація головного ядра програми
 2026-01-20 20:27:27,695 - SETTINGS - INFO - Налаштування завантажено з F:\Projects\Python\parser\config\core_settings.json
 2026-01-20 20:27:27,697 - MAIN - INFO - Ініціалізація головного ядра програми завершилася УСПІШНО
+2026-01-20 20:35:36,357 - SETTINGS - INFO - Налаштування завантажено з F:\Projects\Python\parser\config\core_settings.json
+2026-01-20 20:35:36,539 - SETTINGS - INFO - Налаштування завантажено з F:\Projects\Python\parser\config\core_settings.json
+2026-01-20 20:35:36,688 - MAIN - INFO - PARSER - Запуск програми
+2026-01-20 20:35:36,689 - MAIN - INFO - Час запуску: 2026-01-20 20:35:36
+2026-01-20 20:35:36,689 - MAIN - INFO - Python версія: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2026-01-20 20:35:36,690 - MAIN - INFO - Робоча директорія: F:\Projects\Python\parser
+2026-01-20 20:35:36,691 - MAIN - INFO - ======================================================================
+2026-01-20 20:35:36,692 - SETTINGS - INFO - Налаштування завантажено з F:\Projects\Python\parser\config\gui_settings.json
+2026-01-20 20:35:36,693 - MAIN - INFO - Параметри GUI завантажені УСПІШНО
+2026-01-20 20:35:36,693 - MAIN - INFO - Використовуються наступні параметри GUI програми
+2026-01-20 20:35:36,695 - SETTINGS - INFO - Налаштування завантажено з F:\Projects\Python\parser\config\core_settings.json
+2026-01-20 20:35:36,696 - MAIN - INFO - Параметри CORE завантажено УСПІШНО
+2026-01-20 20:35:36,696 - MAIN - INFO - Використовуються наступні параметри CORE програми
+2026-01-20 20:35:36,697 - MAIN - INFO - ======================================================================
+2026-01-20 20:35:36,699 - MAIN - INFO - Ініціалізація головного ядра програми
+2026-01-20 20:35:36,702 - SETTINGS - INFO - Налаштування завантажено з F:\Projects\Python\parser\config\core_settings.json
+2026-01-20 20:35:36,704 - MAIN - INFO - Ініціалізація головного ядра програми завершилася УСПІШНО
+2026-01-20 20:35:45,601 - CORE - INFO - Значення (C:/Users/dragon/Desktop) завантажено в download.path
+2026-01-20 20:36:34,663 - CORE - INFO - Значення (C:/Users/dragon/Desktop) завантажено в download.path
+2026-01-20 20:36:42,934 - CORE - INFO - Значення (1) завантажено в download.count
+2026-01-20 20:36:42,934 - OPT.BTN_FRAME - INFO - Налаштування збережено: 1
+2026-01-20 20:36:46,961 - SETTINGS - INFO - Налаштування завантажено з F:\Projects\Python\parser\config\core_settings.json
+2026-01-20 20:36:59,759 - CORE - ERROR - Помилка при завантаженні контенту користувача ggg: JSON Query to web/search/topsearch/: 401 Unauthorized - "fail" status, message "Server Error" when accessing https://www.instagram.com/web/search/topsearch/?context=blended&query=ggg&include_reel=False&__a=1
+Traceback (most recent call last):
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 464, in get_json
+    raise QueryReturnedNotFoundException(self._response_error(resp))
+instaloader.exceptions.QueryReturnedNotFoundException: 404 Not Found when accessing https://i.instagram.com/api/v1/users/web_profile_info/?username=ggg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 464, in get_json
+    raise QueryReturnedNotFoundException(self._response_error(resp))
+instaloader.exceptions.QueryReturnedNotFoundException: 404 Not Found when accessing https://i.instagram.com/api/v1/users/web_profile_info/?username=ggg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 464, in get_json
+    raise QueryReturnedNotFoundException(self._response_error(resp))
+instaloader.exceptions.QueryReturnedNotFoundException: 404 Not Found when accessing https://i.instagram.com/api/v1/users/web_profile_info/?username=ggg
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\structures.py", line 982, in _obtain_metadata
+    metadata = self._context.get_iphone_json(f'api/v1/users/web_profile_info/?username={self.username}',
+                                             params={})
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 654, in get_iphone_json
+    response = self.get_json(path, params, 'i.instagram.com', tempsession, response_headers=response_headers)
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 492, in get_json
+    return self.get_json(path=path, params=params, host=host, session=sess, _attempt=_attempt + 1,
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         response_headers=response_headers)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 492, in get_json
+    return self.get_json(path=path, params=params, host=host, session=sess, _attempt=_attempt + 1,
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         response_headers=response_headers)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 478, in get_json
+    raise QueryReturnedNotFoundException(error_string) from err
+instaloader.exceptions.QueryReturnedNotFoundException: JSON Query to api/v1/users/web_profile_info/?username=ggg: 404 Not Found when accessing https://i.instagram.com/api/v1/users/web_profile_info/?username=ggg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 468, in get_json
+    raise ConnectionException(self._response_error(resp))
+instaloader.exceptions.ConnectionException: 401 Unauthorized - "fail" status, message "Server Error" when accessing https://www.instagram.com/web/search/topsearch/?context=blended&query=ggg&include_reel=False&__a=1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 468, in get_json
+    raise ConnectionException(self._response_error(resp))
+instaloader.exceptions.ConnectionException: 401 Unauthorized - "fail" status, message "Server Error" when accessing https://www.instagram.com/web/search/topsearch/?context=blended&query=ggg&include_reel=False&__a=1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 468, in get_json
+    raise ConnectionException(self._response_error(resp))
+instaloader.exceptions.ConnectionException: 401 Unauthorized - "fail" status, message "Server Error" when accessing https://www.instagram.com/web/search/topsearch/?context=blended&query=ggg&include_reel=False&__a=1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Projects\Python\parser\src\insta_parser\core.py", line 124, in download
+    profile = instaloader.Profile.from_username(
+        self.L.context,
+        username
+    )
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\structures.py", line 914, in from_username
+    profile._obtain_metadata()  # to raise ProfileNotExistsException now in case username is invalid
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\structures.py", line 989, in _obtain_metadata
+    top_search_results = TopSearchResults(self._context, self.username)
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\structures.py", line 2064, in __init__
+    self._node = context.get_json('web/search/topsearch/',
+                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                                  params={'context': 'blended',
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                          'query': searchstring,
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+                                          'include_reel': False,
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+                                          '__a': 1})
+                                          ^^^^^^^^^^
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 492, in get_json
+    return self.get_json(path=path, params=params, host=host, session=sess, _attempt=_attempt + 1,
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         response_headers=response_headers)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 492, in get_json
+    return self.get_json(path=path, params=params, host=host, session=sess, _attempt=_attempt + 1,
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         response_headers=response_headers)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dragon\AppData\Local\Programs\Python\Python313\Lib\site-packages\instaloader\instaloadercontext.py", line 480, in get_json
+    raise ConnectionException(error_string) from err
+instaloader.exceptions.ConnectionException: JSON Query to web/search/topsearch/: 401 Unauthorized - "fail" status, message "Server Error" when accessing https://www.instagram.com/web/search/topsearch/?context=blended&query=ggg&include_reel=False&__a=1
+2026-01-20 20:37:51,761 - SETTINGS - INFO - Налаштування завантажено з f:\Projects\Python\parser\config\core_settings.json
+2026-01-20 20:37:51,959 - SETTINGS - INFO - Налаштування завантажено з f:\Projects\Python\parser\config\core_settings.json
+2026-01-20 20:37:52,123 - MAIN - INFO - PARSER - Запуск програми
+2026-01-20 20:37:52,124 - MAIN - INFO - Час запуску: 2026-01-20 20:37:52
+2026-01-20 20:37:52,125 - MAIN - INFO - Python версія: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2026-01-20 20:37:52,125 - MAIN - INFO - Робоча директорія: f:\Projects\Python\parser
+2026-01-20 20:37:52,126 - MAIN - INFO - ======================================================================
+2026-01-20 20:37:52,128 - SETTINGS - INFO - Налаштування завантажено з f:\Projects\Python\parser\config\gui_settings.json
+2026-01-20 20:37:52,128 - MAIN - INFO - Параметри GUI завантажені УСПІШНО
+2026-01-20 20:37:52,129 - MAIN - INFO - Використовуються наступні параметри GUI програми
+2026-01-20 20:37:52,132 - SETTINGS - INFO - Налаштування завантажено з f:\Projects\Python\parser\config\core_settings.json
+2026-01-20 20:37:52,133 - MAIN - INFO - Параметри CORE завантажено УСПІШНО
+2026-01-20 20:37:52,134 - MAIN - INFO - Використовуються наступні параметри CORE програми
+2026-01-20 20:37:52,135 - MAIN - INFO - ======================================================================
+2026-01-20 20:37:52,136 - MAIN - INFO - Ініціалізація головного ядра програми
+2026-01-20 20:37:52,137 - SETTINGS - INFO - Налаштування завантажено з f:\Projects\Python\parser\config\core_settings.json
+2026-01-20 20:37:52,138 - MAIN - INFO - Ініціалізація головного ядра програми завершилася УСПІШНО
+2026-01-20 20:37:58,722 - CORE - INFO - Значення (asttea_f) завантажено в download.username
+2026-01-20 20:38:01,688 - CORE - INFO - Значення (C:/Users/dragon/Desktop) завантажено в download.path
+2026-01-20 20:38:05,033 - CORE - INFO - Значення (1) завантажено в download.count
+2026-01-20 20:38:05,034 - OPT.BTN_FRAME - INFO - Налаштування збережено: 1
+2026-01-20 20:38:08,435 - SETTINGS - INFO - Налаштування завантажено з f:\Projects\Python\parser\config\core_settings.json
+2026-01-20 20:38:14,370 - CORE - INFO - Успішно завантажено 1 постів користувача asttea_f у папку C:\Users\dragon\Desktop\asttea_f
