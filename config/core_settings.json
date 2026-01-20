@@ -1,0 +1,17 @@
+{
+    "instaloader": {
+        "_comment": "Конфігурація для збереження ЛИШЕ фотографій",
+        "download_pictures": true,
+        "download_videos": false,
+        "download_video_thumbnails": false,
+        "save_metadata": false,
+        "post_metadata_txt_pattern": "",
+        "quiet": false,
+        "sanitize_paths": true
+    },
+    "download": {
+        "username": "asttea_f",
+        "count": 2,
+        "path": "C:/Users/dragon/Desktop"
+    }
+}

@@ -1,0 +1,16 @@
+# Instagram Parser - Requirements
+# Python 3.8+
+
+# Core Dependencies
+instaloader>=4.9.0
+customtkinter>=5.0.0
+
+# Standard Library (built-in, no installation needed)
+# - sys
+# - os
+# - json
+# - pathlib
+# - datetime
+# - itertools
+# - typing
+# - logging

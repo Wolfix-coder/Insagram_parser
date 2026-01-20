@@ -1,0 +1,32 @@
+﻿# Git system folders
+.git
+.qodo
+
+# IDEs / Editors
+.vscode/
+.idea/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Logs
+logs/
+*.log
+
+# Env files
+.env
+/src/.env
+
+# SQLite DB
+*.sqlite
+/src/database.sqlite
+
+# Cache folders inside src
+/src/**/__pycache__/
+
+# Specific ignored folders (МЮ БХОЮДНЙ, ЪЙЫН ЫНЯЭ ЫЕ РСДХ ОНРПЮОХРЭ)
+/src/logs/ 
+.toml 
+Dockerfile
