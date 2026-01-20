@@ -1,1 +1,139 @@
-﻿
+﻿2026-01-20 08:35:01,474 - SETTINGS - INFO - Налаштування завантажено з f:\Projects\Python\parser\config\core_settings.json
+2026-01-20 08:35:02,170 - SETTINGS - INFO - Налаштування завантажено з f:\Projects\Python\parser\config\core_settings.json
+2026-01-20 08:35:02,405 - MAIN - INFO - PARSER - Запуск програми
+2026-01-20 08:35:02,406 - MAIN - INFO - Час запуску: 2026-01-20 08:35:02
+2026-01-20 08:35:02,407 - MAIN - INFO - Python версія: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2026-01-20 08:35:02,408 - MAIN - INFO - Робоча директорія: f:\Projects\Python\parser
+2026-01-20 08:35:02,409 - MAIN - INFO - ======================================================================
+2026-01-20 08:35:02,410 - SETTINGS - INFO - Налаштування завантажено з f:\Projects\Python\parser\config\gui_settings.json
+2026-01-20 08:35:02,410 - MAIN - INFO - Параметри GUI завантажені УСПІШНО
+2026-01-20 08:35:02,411 - MAIN - INFO - Використовуються наступні параметри GUI програми
+2026-01-20 08:35:02,413 - SETTINGS - INFO - Налаштування завантажено з f:\Projects\Python\parser\config\core_settings.json
+2026-01-20 08:35:02,414 - MAIN - INFO - Параметри CORE завантажено УСПІШНО
+2026-01-20 08:35:02,415 - MAIN - INFO - Використовуються наступні параметри CORE програми
+2026-01-20 08:35:02,416 - MAIN - INFO - ======================================================================
+2026-01-20 08:35:02,417 - MAIN - INFO - Ініціалізація головного ядра програми
+2026-01-20 08:35:02,418 - SETTINGS - INFO - Налаштування завантажено з f:\Projects\Python\parser\config\core_settings.json
+2026-01-20 08:35:02,419 - MAIN - INFO - Ініціалізація головного ядра програми завершилася УСПІШНО
+2026-01-20 08:35:10,131 - CORE - INFO - Значення (ggg) завантажено в download.username
+2026-01-20 08:35:13,711 - CORE - INFO - Значення (C:/Users/dragon/Desktop) завантажено в download.path
+2026-01-20 08:35:19,537 - CORE - INFO - Значення (5) завантажено в download.count
+2026-01-20 08:35:19,538 - OPT.BTN_FRAME - INFO - Налаштування збережено: 5
+2026-01-20 08:35:23,517 - SETTINGS - INFO - Налаштування завантажено з f:\Projects\Python\parser\config\core_settings.json
+2026-01-20 08:35:34,179 - CORE - ERROR - Помилка при завантаженні контенту користувача ggg: JSON Query to web/search/topsearch/: 401 Unauthorized - "fail" status, message "Server Error" when accessing https://www.instagram.com/web/search/topsearch/?context=blended&query=ggg&include_reel=False&__a=1
+Traceback (most recent call last):
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\instaloadercontext.py", line 464, in get_json
+    raise QueryReturnedNotFoundException(self._response_error(resp))
+instaloader.exceptions.QueryReturnedNotFoundException: 404 Not Found when accessing https://i.instagram.com/api/v1/users/web_profile_info/?username=ggg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\instaloadercontext.py", line 464, in get_json
+    raise QueryReturnedNotFoundException(self._response_error(resp))
+instaloader.exceptions.QueryReturnedNotFoundException: 404 Not Found when accessing https://i.instagram.com/api/v1/users/web_profile_info/?username=ggg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\instaloadercontext.py", line 464, in get_json
+    raise QueryReturnedNotFoundException(self._response_error(resp))
+instaloader.exceptions.QueryReturnedNotFoundException: 404 Not Found when accessing https://i.instagram.com/api/v1/users/web_profile_info/?username=ggg
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\structures.py", line 982, in _obtain_metadata
+    metadata = self._context.get_iphone_json(f'api/v1/users/web_profile_info/?username={self.username}',
+                                             params={})
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\instaloadercontext.py", line 654, in get_iphone_json
+    response = self.get_json(path, params, 'i.instagram.com', tempsession, response_headers=response_headers)
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\instaloadercontext.py", line 492, in get_json
+    return self.get_json(path=path, params=params, host=host, session=sess, _attempt=_attempt + 1,
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         response_headers=response_headers)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\instaloadercontext.py", line 492, in get_json
+    return self.get_json(path=path, params=params, host=host, session=sess, _attempt=_attempt + 1,
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         response_headers=response_headers)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\instaloadercontext.py", line 478, in get_json
+    raise QueryReturnedNotFoundException(error_string) from err
+instaloader.exceptions.QueryReturnedNotFoundException: JSON Query to api/v1/users/web_profile_info/?username=ggg: 404 Not Found when accessing https://i.instagram.com/api/v1/users/web_profile_info/?username=ggg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\instaloadercontext.py", line 468, in get_json
+    raise ConnectionException(self._response_error(resp))
+instaloader.exceptions.ConnectionException: 401 Unauthorized - "fail" status, message "Server Error" when accessing https://www.instagram.com/web/search/topsearch/?context=blended&query=ggg&include_reel=False&__a=1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\instaloadercontext.py", line 468, in get_json
+    raise ConnectionException(self._response_error(resp))
+instaloader.exceptions.ConnectionException: 401 Unauthorized - "fail" status, message "Server Error" when accessing https://www.instagram.com/web/search/topsearch/?context=blended&query=ggg&include_reel=False&__a=1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\instaloadercontext.py", line 468, in get_json
+    raise ConnectionException(self._response_error(resp))
+instaloader.exceptions.ConnectionException: 401 Unauthorized - "fail" status, message "Server Error" when accessing https://www.instagram.com/web/search/topsearch/?context=blended&query=ggg&include_reel=False&__a=1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "f:\Projects\Python\parser\src\insta_parser\core.py", line 124, in download
+    profile = instaloader.Profile.from_username(
+        self.L.context,
+        username
+    )
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\structures.py", line 914, in from_username
+    profile._obtain_metadata()  # to raise ProfileNotExistsException now in case username is invalid
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\structures.py", line 989, in _obtain_metadata
+    top_search_results = TopSearchResults(self._context, self.username)
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\structures.py", line 2064, in __init__
+    self._node = context.get_json('web/search/topsearch/',
+                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+                                  params={'context': 'blended',
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                          'query': searchstring,
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+                                          'include_reel': False,
+                                          ^^^^^^^^^^^^^^^^^^^^^^
+                                          '__a': 1})
+                                          ^^^^^^^^^^
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\instaloadercontext.py", line 492, in get_json
+    return self.get_json(path=path, params=params, host=host, session=sess, _attempt=_attempt + 1,
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         response_headers=response_headers)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\instaloadercontext.py", line 492, in get_json
+    return self.get_json(path=path, params=params, host=host, session=sess, _attempt=_attempt + 1,
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         response_headers=response_headers)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Projects\Python\parser\.venv\Lib\site-packages\instaloader\instaloadercontext.py", line 480, in get_json
+    raise ConnectionException(error_string) from err
+instaloader.exceptions.ConnectionException: JSON Query to web/search/topsearch/: 401 Unauthorized - "fail" status, message "Server Error" when accessing https://www.instagram.com/web/search/topsearch/?context=blended&query=ggg&include_reel=False&__a=1
+2026-01-20 20:27:26,545 - SETTINGS - INFO - Налаштування завантажено з F:\Projects\Python\parser\config\core_settings.json
+2026-01-20 20:27:27,493 - SETTINGS - INFO - Налаштування завантажено з F:\Projects\Python\parser\config\core_settings.json
+2026-01-20 20:27:27,667 - MAIN - INFO - PARSER - Запуск програми
+2026-01-20 20:27:27,668 - MAIN - INFO - Час запуску: 2026-01-20 20:27:27
+2026-01-20 20:27:27,669 - MAIN - INFO - Python версія: 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]
+2026-01-20 20:27:27,671 - MAIN - INFO - Робоча директорія: F:\Projects\Python\parser
+2026-01-20 20:27:27,673 - MAIN - INFO - ======================================================================
+2026-01-20 20:27:27,675 - SETTINGS - INFO - Налаштування завантажено з F:\Projects\Python\parser\config\gui_settings.json
+2026-01-20 20:27:27,676 - MAIN - INFO - Параметри GUI завантажені УСПІШНО
+2026-01-20 20:27:27,678 - MAIN - INFO - Використовуються наступні параметри GUI програми
+2026-01-20 20:27:27,684 - SETTINGS - INFO - Налаштування завантажено з F:\Projects\Python\parser\config\core_settings.json
+2026-01-20 20:27:27,685 - MAIN - INFO - Параметри CORE завантажено УСПІШНО
+2026-01-20 20:27:27,686 - MAIN - INFO - Використовуються наступні параметри CORE програми
+2026-01-20 20:27:27,691 - MAIN - INFO - ======================================================================
+2026-01-20 20:27:27,693 - MAIN - INFO - Ініціалізація головного ядра програми
+2026-01-20 20:27:27,695 - SETTINGS - INFO - Налаштування завантажено з F:\Projects\Python\parser\config\core_settings.json
+2026-01-20 20:27:27,697 - MAIN - INFO - Ініціалізація головного ядра програми завершилася УСПІШНО
